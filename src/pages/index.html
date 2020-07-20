@@ -3,30 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mój Mały Edytor</title>
+    <title>My Little Editor</title>
   </head>
   <body class="body">
+    <!--header-->
+    <header class="header">
+      <h1 class="header__title">My Little Editor</h1>
+    </header>
+    <!--main-->
     <main class="main">
-      <section class="section">
-        <div class="editor">
-          <h1 class="editor__tilte">Edytor MLU</h1>
-          <p class="editor__description">???</p>
-        </div>
-        <img
-          class="image image--special"
-          src="/src/assets/img/mlu__mascot.png"
-          alt="???"
-          title="??"
-        />
+      <section class="editor-area">
+        <button class="editor-area__button">
+          <img
+            class="image"
+            src="/src/assets/img/editor__save.png"
+            alt="save icon"
+            title="Save"
+          />
+          Save
+        </button>
+        <p class="editor-area__description">
+          <label class="label" for="input">
+            <input
+              class="input"
+              name="input"
+              id="input"
+              placeholder="Write text to save it."
+              class="input"
+              type="text"
+            />
+          </label>
+        </p>
+        <button class="editor-area__button editor-area__button--load">
+          <img
+            class="image"
+            src="/src/assets/img/editor__load.png"
+            alt="load icon"
+            title="Load"
+          />
+          Load
+        </button>
       </section>
     </main>
+    <!--footer-->
     <footer class="footer">
-      <img
-        class="image"
-        src="/src/assets/img/mlu__floor.png"
-        alt="???"
-        title="??"
-      />
+      <p class="footer__description">Editor created by Kamil Malinowski</p>
     </footer>
   </body>
 </html>
