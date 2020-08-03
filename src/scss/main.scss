@@ -1,28 +1,19 @@
 @import "~normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
-/*RESET-m.korsan idea*/
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 /*BODY*/
 .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   background-image: url("../assets/img/editor__background.png");
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
   color: black;
   font-family: "VT323", monospace;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
   min-height: 100vh;
 }
 
@@ -42,8 +33,11 @@ html {
   border-bottom: 4px groove #1dc1ad;
   &__title {
     font-size: 24px;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
     font-weight: lighter;
+    margin: auto 0;
+    @media (max-width: 320px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -61,16 +55,49 @@ html {
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    border: none;
     background: #1dc1ad;
     font-size: 16px;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
     outline: none;
     cursor: pointer;
     border-bottom: 6px solid #106d61;
     border-top: 6px solid white;
     border-left: 6px solid white;
     border-right: 6px solid #106d61;
+    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
+    @media (max-width: 1024px) {
+      height: 160px;
+      width: 160px;
+    }
+    @media (max-width: 836px) {
+      height: 120px;
+      width: 120px;
+    }
+    @media (max-width: 610px) {
+      height: 90px;
+      width: 90px;
+      border-bottom: 5px solid #106d61;
+      border-top: 5px solid white;
+      border-left: 5px solid white;
+      border-right: 5px solid #106d61;
+    }
+    @media (max-width: 500px) {
+      height: 60px;
+      width: 60px;
+      font-size: 10px;
+      border-bottom: 3px solid #106d61;
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+      border-right: 3px solid #106d61;
+    }
+    @media (max-width: 375px) {
+      height: 30px;
+      width: 30px;
+      font-size: 6px;
+      border-bottom: 2px solid #106d61;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-right: 2px solid #106d61;
+    }
     &:active {
       background: #ef929e;
       transform: rotate(4deg);
@@ -87,14 +114,59 @@ html {
     border-radius: 100%;
     border: 40px ridge #1dc1ad;
     outline: none;
-    padding: 200px 0;
+    @media (max-width: 1024px) {
+      height: 400px;
+      width: 400px;
+      border: 30px ridge #1dc1ad;
+    }
+    @media (max-width: 836px) {
+      height: 300px;
+      width: 300px;
+      border: 20px ridge #1dc1ad;
+    }
+    @media (max-width: 610px) {
+      height: 250px;
+      width: 250px;
+      border: 15px ridge #1dc1ad;
+    }
+    @media (max-width: 500px) {
+      height: 200px;
+      width: 200px;
+      border: 10px ridge #1dc1ad;
+    }
+    @media (max-width: 375px) {
+      height: 100px;
+      width: 100px;
+      font-size: 6px;
+      border: 6px ridge #1dc1ad;
+    }
   }
 }
 
 .image {
-  margin-top: 16px;
   height: 100px;
   width: 100px;
+  @media (max-width: 1024px) {
+    height: 80px;
+    width: 80px;
+  }
+  @media (max-width: 836px) {
+    height: 60px;
+    width: 60px;
+  }
+  @media (max-width: 610px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media (max-width: 500px) {
+    height: 20px;
+    width: 20px;
+    margin-top: 4px;
+  }
+  @media (max-width: 375px) {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 /*FOOTER*/
@@ -107,11 +179,18 @@ html {
   width: 100%;
   border-top: 4px ridge #1dc1ad;
   &__description {
-    font-size: 16px;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
+    font-size: 18px;
+    margin: auto 0;
+    @media (max-width: 320px) {
+      font-size: 16px;
+    }
   }
   &__link {
     color: white;
     text-decoration: none;
+    text-shadow: 2px 1px 2px rgba(12, 11, 11, 0.719);
+    &:active {
+      color: #106d61;
+    }
   }
 }
