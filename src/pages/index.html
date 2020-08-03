@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/assets/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
     <title>My Little Editor</title>
   </head>
+
+  <!--BODY-->
   <body class="body">
     <!--header-->
     <header class="header">
@@ -12,8 +20,8 @@
     </header>
     <!--main-->
     <main class="main">
-      <section class="editor-area">
-        <button class="editor-area__button">
+      <form class="editor-area">
+        <button class="editor-area__button save--js">
           <img
             class="image"
             src="../assets/img/editor__save.png"
@@ -22,19 +30,12 @@
           />
           Save
         </button>
-        <p class="editor-area__description">
-          <label class="label" for="input">
-            <input
-              class="input"
-              name="input"
-              id="input"
-              placeholder="Write text to save it."
-              class="input"
-              type="text"
-            />
-          </label>
-        </p>
-        <button class="editor-area__button editor-area__button--load">
+        <textarea
+          class="editor-area__textarea textarea--js"
+          placeholder="Write text to save it."
+          maxlength="60"
+        ></textarea>
+        <button class="editor-area__button editor-area__button--load load--js">
           <img
             class="image"
             src="../assets/img/editor__load.png"
@@ -43,11 +44,16 @@
           />
           Load
         </button>
-      </section>
+      </form>
     </main>
     <!--footer-->
     <footer class="footer">
-      <p class="footer__description">Editor created by Kamil Malinowski</p>
+      <p class="footer__description">
+        Editor created by
+        <a class="footer__link" href="https://github.com/kamilMalinowski"
+          >Kamil Malinowski</a
+        >
+      </p>
     </footer>
   </body>
 </html>

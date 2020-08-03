@@ -18,17 +18,16 @@ html {
   background-size: contain;
   background-position: center;
   color: black;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /*MAIN*/
 .main {
-  margin: 0;
   width: 100%;
 }
 
@@ -66,32 +65,38 @@ html {
     background: #1dc1ad;
     font-size: 16px;
     text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
+    outline: none;
     cursor: pointer;
+    border-bottom: 6px solid #106d61;
+    border-top: 6px solid white;
+    border-left: 6px solid white;
+    border-right: 6px solid #106d61;
     &:active {
-      background: #3ee261;
-    }
-    &--load {
-      &:active {
-        background: #d2e23e;
-      }
+      background: #ef929e;
+      transform: rotate(4deg);
+      border-bottom: 6px solid white;
+      border-top: 6px solid #e23e52;
+      border-left: 6px solid #e23e52;
+      border-right: 6px solid white;
     }
   }
-  &__description {
-    max-height: 100%;
+  &__textarea {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 40px ridge #1dc1ad;
+    outline: none;
+    padding: 200px 0;
   }
 }
+
 .image {
   margin-top: 16px;
   height: 100px;
   width: 100px;
 }
-.input {
-  text-align: center;
-  width: 500px;
-  height: 500px;
-  border-radius: 100%;
-  border: 40px ridge #1dc1ad;
-}
+
 /*FOOTER*/
 .footer {
   display: flex;
@@ -104,5 +109,9 @@ html {
   &__description {
     font-size: 16px;
     text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
   }
 }
