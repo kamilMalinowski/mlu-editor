@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="src/assets/icons/favicon-96x96.png"
-      sizes="96x96"
+    <meta
+      name="description"
+      content="
+      A simple editor that saves and loads the text created as part of the ...WTF: Co ten Frontend... training."
+    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <meta
+      property="og:image"
+      content="https://www.behance.net/070c1aff-c6f6-4cab-ac30-43eb022e796f"
     />
     <title>My Little Editor</title>
   </head>
@@ -36,6 +40,8 @@
           placeholder="Write text to save it."
           maxlength="60"
         ></textarea>
+        <!--counter-->
+        <div class="charCount charCount--js"></div>
         <button class="editor-area__button editor-area__button--load load--js">
           <img
             class="image"
@@ -51,8 +57,8 @@
     <footer class="footer">
       <p class="footer__description">
         Editor created by
-        <a class="footer__link" href="https://github.com/kamilMalinowski"
-          > Kamil Malinowski</a
+        <a class="footer__link" href="https://github.com/kamilMalinowski">
+          Kamil Malinowski</a
         >
       </p>
     </footer>
