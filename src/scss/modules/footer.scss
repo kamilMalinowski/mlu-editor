@@ -1,0 +1,29 @@
+.footer {
+  background: $greanBlue;
+  height: 46px;
+  width: 100%;
+  border-top: 4px ridge $greanBlue;
+  margin: 0;
+  padding: 0;
+  &__description {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    padding: 3px 0 3px 0;
+    text-shadow: $lightShadow;
+  }
+  &__link {
+    animation: flicker 1s linear infinite alternate;
+    color: $whiteText;
+    text-shadow: $darkShadow;
+  }
+}
+
+@keyframes flicker {
+  from {
+    text-decoration: underline;
+  }
+  to {
+    text-decoration: none;
+  }
+}
