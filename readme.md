@@ -1,4 +1,4 @@
-![cover](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2bfdf790814117.5f29adb940047.png)
+![cover](https://kamilmalinowski.github.io/mlu-editor/public/editor-og.png)
 
 # MLU EDITOR - WTF SIMPLE EDITOR 
 
@@ -8,7 +8,6 @@ Hi, this is my simple editor created as part of the "WTF: Co ten frontend" train
 
 - WTF Webpack starterkit
 - HTML + CSS + JS
-- Github API
 
 ## AVAILABLE SCRIPTS
 
