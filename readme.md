@@ -1,4 +1,4 @@
-![cover](https://kamilmalinowski.github.io/mlu-editor/public/editor-og.png)
+![cover](https://kamilmalinowski.github.io/mlu-editor/editor-og.png)
 
 # MLU EDITOR - WTF SIMPLE EDITOR 
 
