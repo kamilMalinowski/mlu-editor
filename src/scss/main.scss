@@ -20,6 +20,10 @@ html {
 
 /*BODY*/
 .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
   background-image: url("../assets/img/editor__background.png");
   background-repeat: repeat;
   background-size: contain;
@@ -28,3 +32,7 @@ html {
   font-family: "VT323", monospace;
 }
 
+.main {
+  display: block;
+  width: 100%;
+}

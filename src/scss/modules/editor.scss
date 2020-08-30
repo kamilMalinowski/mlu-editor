@@ -6,6 +6,17 @@
   @media (max-width: 500px) {
     flex-direction: column;
   }
+  &__charCount {
+    position: absolute;
+    padding-top: 40px;
+    &::after {
+      font-size: 36px;
+      content: "/60";
+    }
+  }
+}
+
+.editor-click {
   &__button {
     display: flex;
     justify-content: center;
@@ -13,9 +24,9 @@
     flex-direction: column;
     height: 200px;
     width: 200px;
-    border-radius: 100%;
+
     background: #1dc1ad;
-    font-size: 16px;
+    font-size: 36px;
     outline: none;
     cursor: pointer;
     border-bottom: 6px solid #106d61;
@@ -23,7 +34,7 @@
     border-left: 6px solid white;
     border-right: 6px solid #106d61;
     text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
-    margin: 40px 10px;
+    margin: 0;
     transition-duration: 0.4s;
     &:active {
       transition-duration: 0.05s;
@@ -56,8 +67,8 @@
     }
   }
   &__image {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     @media (max-width: 1024px) {
       height: 80px;
       width: 80px;
@@ -71,40 +82,37 @@
       width: 40px;
     }
   }
-  &__charCount {
-    position: absolute;
-    padding-top: 40px;
-    &::after {
-      content: "/30";
-    }
-  }
+}
+
+.editor-form {
   &__textarea {
+    font-size: 30px;
     resize: none;
-    line-height: 400px;
     text-align: center;
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
+    width: 800px;
+    height: 200px;
+
+
     border: 40px ridge #1dc1ad;
     outline: none;
-    margin: 40px 20px;
+    margin: 50px;
     @media (max-width: 1024px) {
       height: 400px;
       width: 400px;
       border: 30px ridge #1dc1ad;
-      line-height: 320px;
+
     }
     @media (max-width: 800px) {
       height: 300px;
       width: 300px;
       border: 20px ridge #1dc1ad;
-      line-height: 240px;
+
     }
     @media (max-width: 610px) {
       height: 250px;
       width: 250px;
       border: 15px ridge #1dc1ad;
-      line-height: 200px;
+
     }
     @media (max-height: 740px) {
       margin: 10px 20px;
