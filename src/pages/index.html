@@ -3,29 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Little Editor</title>
     <meta
       name="description"
-      content="
-      A simple editor that saves and loads the text created as part of the ...WTF: Co ten Frontend... training."
+      content="A simple editor that saves and loads the text created as part of the ...WTF: Co ten Frontend... training."
     />
+    <!-- Title -->
+    <meta property="og:title" content="My Little Editor" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta
+      property="og:description"
+      content="A simple editor that saves and loads the text created as part of the ...WTF: Co ten Frontend... training."
+    />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta
+      property="og:url"
+      content="https://kamilmalinowski.github.io/mlu-editor/"
+    />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
-      content="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2bfdf790814117.5f29adb940047.png"
+      content="https://kamilmalinowski.github.io/mlu-editor/editor-og.png"
     />
-    <meta
-      property="og:image:secure_url"
-      content="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2bfdf790814117.5f29adb940047.png"
-    />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="200" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d0c5bd90814117.5f29b76a34b73.png"
-    />
-
-    <title>My Little Editor</title>
   </head>
 
   <!--BODY-->
@@ -36,10 +35,10 @@
     </header>
     <!--main-->
     <main class="main">
-      <form class="editor-area">
-        <button class="editor-area__button save--js">
+      <form class="editor">
+        <button class="editor__button save--js">
           <img
-            class="image"
+            class="editor__image"
             src="../assets/img/editor__save.png"
             alt="save icon"
             title="Save"
@@ -47,16 +46,16 @@
           Save
         </button>
         <textarea
-          class="editor-area__textarea textarea--js"
+          class="editor__textarea textarea--js"
           aria-label="Write text to save it."
           placeholder="Write text to save it."
           maxlength="30"
         ></textarea>
         <!--counter-->
-        <div class="charCount charCount--js"></div>
-        <button class="editor-area__button editor-area__button--load load--js">
+        <div class="editor__charCount charCount--js"></div>
+        <button class="editor__button editor__button--load load--js">
           <img
-            class="image"
+            class="editor__image"
             src="../assets/img/editor__load.png"
             alt="load icon"
             title="Load"
@@ -69,7 +68,13 @@
     <footer class="footer">
       <p class="footer__description">
         Editor created by
-        <a class="footer__link" href="https://github.com/kamilMalinowski">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+          href="https://github.com/kamilMalinowski"
+          title="Kamil Malinowski"
+        >
           Kamil Malinowski</a
         >
       </p>
