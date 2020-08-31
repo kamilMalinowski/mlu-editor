@@ -1,7 +1,4 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: $greanBlue;
   height: 46px;
   width: 100%;
@@ -12,20 +9,19 @@
     text-align: center;
     font-size: 28px;
     text-shadow: $lightShadow;
-    margin: 0;
-    padding: 3px 0 3px 0;
+    padding: 3px 0 0;
+    margin: 0 auto;
     @media (max-width: 410px) {
-      display: none;
+      font-size: 0;
     }
   }
   &__link {
     animation: flicker 1s linear infinite alternate;
     color: $whiteText;
     text-shadow: $darkShadow;
-    margin: 0;
-    padding: 3px 0 3px 12px;
-    text-align: center;
-    font-size: 28px;
+    @media (max-width: 410px) {
+      font-size: 28px;
+    }
   }
 }
 

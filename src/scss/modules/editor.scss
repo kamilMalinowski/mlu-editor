@@ -1,121 +1,86 @@
-/*EDITOR-AREA*/
 .editor {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
   @media (max-width: 500px) {
     flex-direction: column;
   }
-  &__charCount {
-    position: absolute;
-    padding-top: 40px;
-    &::after {
-      font-size: 36px;
-      content: "/60";
-    }
+}
+
+//counters
+.editor-charCount {
+  text-align: center;
+  color: $blackText;
+  background: $pink;
+  border: 6px solid $red;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  &::after {
+    content: "/100";
+    font-size: 30px;
   }
+}
+.editor-saveCount {
+  text-align: center;
+  color: $blackText;
+  background: $pink;
+  border: 6px solid $red;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
 }
 
 .editor-click {
   &__button {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
     align-items: center;
-    flex-direction: column;
+    color: $blackText;
     height: 200px;
     width: 200px;
-
-    background: #1dc1ad;
+    background: $greanBlue;
+    text-align: center;
     font-size: 36px;
+    border: 6px solid $darkGreenBlue;
+    text-shadow: $lightShadow;
+    margin: 0;
+    padding: 0;
     outline: none;
     cursor: pointer;
-    border-bottom: 6px solid #106d61;
-    border-top: 6px solid white;
-    border-left: 6px solid white;
-    border-right: 6px solid #106d61;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.719);
-    margin: 0;
-    transition-duration: 0.4s;
+    &:hover {
+      color: $whiteText;
+      text-shadow: $darkShadow;
+    }
     &:active {
-      transition-duration: 0.05s;
-      background: #ef929e;
-      transform: rotate(4deg);
-      border-bottom: 6px solid white;
-      border-top: 6px solid #e23e52;
-      border-left: 6px solid #e23e52;
-      border-right: 6px solid white;
-      outline: none;
-    }
-    @media (max-width: 1024px) {
-      height: 160px;
-      width: 160px;
-    }
-    @media (max-width: 800px) {
-      height: 120px;
-      width: 120px;
-    }
-    @media (max-width: 610px) {
-      height: 90px;
-      width: 90px;
-      border-bottom: 5px solid #106d61;
-      border-top: 5px solid white;
-      border-left: 5px solid white;
-      border-right: 5px solid #106d61;
-    }
-    @media (max-height: 740px) {
-      margin: 10px 10px;
+      background: $pink;
+      border: 6px solid $red;
     }
   }
   &__image {
     height: 80px;
     width: 80px;
-    @media (max-width: 1024px) {
-      height: 80px;
-      width: 80px;
-    }
-    @media (max-width: 800px) {
-      height: 60px;
-      width: 60px;
-    }
-    @media (max-width: 610px) {
-      height: 40px;
-      width: 40px;
-    }
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
 .editor-form {
+  width: 400px;
+  height: 200px;
+  color: $blackText;
+  margin: 0;
+  border: 6px solid $darkGreenBlue;
   &__textarea {
+    width: 100%;
+    height: 100%;
     font-size: 30px;
     resize: none;
     text-align: center;
-    width: 800px;
-    height: 200px;
-
-
-    border: 40px ridge #1dc1ad;
+    background: $whiteText;
+    padding: 10px;
     outline: none;
-    margin: 50px;
-    @media (max-width: 1024px) {
-      height: 400px;
-      width: 400px;
-      border: 30px ridge #1dc1ad;
-
-    }
-    @media (max-width: 800px) {
-      height: 300px;
-      width: 300px;
-      border: 20px ridge #1dc1ad;
-
-    }
-    @media (max-width: 610px) {
-      height: 250px;
-      width: 250px;
-      border: 15px ridge #1dc1ad;
-
-    }
-    @media (max-height: 740px) {
-      margin: 10px 20px;
-    }
   }
 }
