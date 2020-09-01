@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 @import "modules/editor.scss";
+@import "modules/editor-count.scss";
 @import "modules/footer.scss";
 @import "modules/header.scss";
 
@@ -20,18 +21,18 @@ html {
 
 /*BODY*/
 .body {
-  background-image: url("../assets/img/editor__background.png");
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center;
+  background: $blackText;
   color: $blackText;
   font-family: "VT323", monospace;
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  background-image: url("../assets/img/editor__background.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
   min-height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
 }

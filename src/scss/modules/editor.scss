@@ -1,36 +1,12 @@
 .editor {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   @media (max-width: 500px) {
     flex-direction: column;
   }
-}
-
-//counters
-.editor-charCount {
-  text-align: center;
-  color: $blackText;
-  background: $pink;
-  border: 6px solid $red;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
-  &::after {
-    content: "/100";
-    font-size: 30px;
-  }
-}
-.editor-saveCount {
-  text-align: center;
-  color: $blackText;
-  background: $pink;
-  border: 6px solid $red;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
 }
 
 .editor-click {
@@ -53,6 +29,7 @@
     &:hover {
       color: $whiteText;
       text-shadow: $darkShadow;
+      padding-top: 4px;
     }
     &:active {
       background: $pink;
@@ -69,7 +46,7 @@
 
 .editor-form {
   width: 400px;
-  height: 200px;
+  height: 400px;
   color: $blackText;
   margin: 0;
   border: 6px solid $darkGreenBlue;
@@ -80,7 +57,8 @@
     resize: none;
     text-align: center;
     background: $whiteText;
-    padding: 10px;
+    padding: 10px 20px;
     outline: none;
+    overflow: hidden;
   }
 }
