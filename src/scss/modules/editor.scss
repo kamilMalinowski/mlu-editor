@@ -46,7 +46,7 @@
       height: 160px;
       width: 160px;
     }
-    @media (max-height: 820px) {
+    @media (max-height: 720px) {
       grid-template-rows: 1fr;
       height: 56px;
     }
@@ -56,7 +56,7 @@
     width: 80px;
     margin: 0 auto;
     padding: 0;
-    @media (max-height: 820px) {
+    @media (max-height: 720px) {
       display: none;
     }
   }
