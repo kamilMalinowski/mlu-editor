@@ -30,6 +30,9 @@
       color: $whiteText;
       text-shadow: $darkShadow;
       padding-top: 4px;
+      @media (max-height: 720px) {
+        padding-top: 0;
+      }
     }
     &:active {
       background: $pink;
@@ -43,12 +46,19 @@
       height: 160px;
       width: 160px;
     }
+    @media (max-height: 820px) {
+      grid-template-rows: 1fr;
+      height: 56px;
+    }
   }
   &__image {
     height: 80px;
     width: 80px;
     margin: 0 auto;
     padding: 0;
+    @media (max-height: 820px) {
+      display: none;
+    }
   }
 }
 
