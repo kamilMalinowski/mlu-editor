@@ -1,4 +1,5 @@
-.editor-charCount {
+.editor-charCount,
+.editor-saveCount {
   padding-right: 6px;
   padding-top: 6px;
   text-align: right;
@@ -7,21 +8,21 @@
   width: 110px;
   height: 50px;
   font-size: 30px;
-  &::after {
-    content: "/200";
-    font-size: 30px;
+  @media (max-width: 1060px) {
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
   }
 }
 
-.editor-saveCount {
-  padding-right: 6px;
-  padding-top: 6px;
-  text-align: center;
-  color: $blackText;
-  background: $pink;
-  width: 110px;
-  height: 50px;
-  font-size: 30px;
+.editor-charCount {
+  &::after {
+    content: "/200";
+    font-size: 30px;
+    @media (max-width: 1060px) {
+        font-size: 24px;
+      }
+  }
 }
 
 /*animation*/

@@ -4,7 +4,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  @media (max-width: 500px) {
+  @media (max-width: 1060px) {
     flex-direction: column;
   }
 }
@@ -35,6 +35,14 @@
       background: $pink;
       border: 6px solid $red;
     }
+    @media (max-width: 1060px) {
+      height: 180px;
+      width: 180px;
+    }
+    @media (max-width: 320px) {
+      height: 160px;
+      width: 160px;
+    }
   }
   &__image {
     height: 80px;
@@ -50,6 +58,14 @@
   color: $blackText;
   margin: 0;
   border: 6px solid $darkGreenBlue;
+  @media (max-width: 1060px) {
+    height: 300px;
+    width: 300px;
+  }
+  @media (max-width: 320px) {
+    height: 250px;
+    width: 250px;
+  }
   &__textarea {
     width: 100%;
     height: 100%;

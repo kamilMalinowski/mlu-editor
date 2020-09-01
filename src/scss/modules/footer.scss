@@ -5,6 +5,9 @@
   border-top: 4px ridge $greanBlue;
   margin: 110px 0 0 0;
   padding: 0;
+  @media (max-width: 1060px) {
+    margin: 10px 0 0 0;
+  }
   &__description {
     text-align: center;
     font-size: 28px;
