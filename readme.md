@@ -1,5 +1,3 @@
-![cover](https://kamilmalinowski.github.io/mlu-editor/editor-og.png)
-
 # MLU EDITOR - WTF SIMPLE EDITOR 
 
 Hi, this is my simple editor created as part of the "WTF: Co ten frontend" training. I still think about how to make it better.
